@@ -1,0 +1,84 @@
+# name: lost_and_found_app
+# description: A Lost and Found application using Flutter and Firestore.
+# publish_to: 'none' # Prevents accidental publishing
+
+# # ----------------------------------------------------------------------
+# # 1. Environment (Required to fix the 'no lower-bound SDK constraint' error)
+# # ----------------------------------------------------------------------
+# environment:
+#   # The constraint is correct for modern Flutter
+#   sdk: '>=3.0.0 <4.0.0'
+
+# # ----------------------------------------------------------------------
+# # 2. Dependencies (Updated and complete list)
+# # ----------------------------------------------------------------------
+# dependencies:
+#   flutter:
+#     sdk: flutter
+  
+#   # Firebase/Firestore
+#   # Using the versions you provided, which are current
+#   firebase_core: ^4.2.1
+#   firebase_auth: ^6.1.2
+#   cloud_firestore: ^6.1.0
+  
+#   # UI/Utilities
+#   intl: ^0.20.2             # For date formatting
+#   image_picker: ^1.2.1      # For camera/gallery access
+#   path_provider: ^2.1.5     # To find the local directory for saving images
+#   path: ^1.9.1              # To manage file paths safely
+  
+#   # CRITICAL ADDITION: Needed for the 'Contact Poster' email feature
+#   url_launcher: ^6.2.2      # To open external links (like mailto:)
+  
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   flutter_lints: ^3.0.0 # Updated to a common modern version
+
+# # ----------------------------------------------------------------------
+# # 3. Flutter Configuration (Assets setup is correct)
+# # ----------------------------------------------------------------------
+# flutter:
+#   uses-material-design: true
+
+#   assets:
+#     - assets/
+
+
+
+name: lost_and_found_app
+description: A campus-specific Lost and Found application using Flutter and Firestore.
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.10.0
+  firebase_auth: ^5.4.0
+  cloud_firestore: ^5.6.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  intl: ^0.20.2
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.2.0
+  provider: ^6.1.5+1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets folder for storing local images, icons, etc.
+  assets:
+    - assets/
